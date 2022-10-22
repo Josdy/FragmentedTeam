@@ -24,12 +24,15 @@ migrate_working_dir/
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-.pub-cache/
-.pub/
+all_inclusive/.dart_tool/
+all_inclusive/linux/
+all_inclusive/macos/
+all_inclusive/windows/
+all_inclusive/.flutter-plugins
+all_inclusive/.flutter-plugins-dependencies
+all_inclusive/.packages
+all_inclusive/.pub-cache/
+all_inclusive/.pub/
 /build/
 
 # Symbolication related
