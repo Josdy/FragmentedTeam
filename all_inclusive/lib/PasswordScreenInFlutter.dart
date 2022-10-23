@@ -357,9 +357,9 @@ class _PasswordViewState extends State<PasswordView> {
                                           backspace();
                                         },
                                         child: Icon(Icons.backspace_outlined,
-                                            color: Colors.black.withBlue(60),
+                                            color: Colors.black.withBlue(20),
                                             semanticLabel: "Borrar",
-                                            size: 60),
+                                            size: 30),
                                       ),
                                     ),
                                     Expanded(
@@ -390,14 +390,14 @@ class _PasswordViewState extends State<PasswordView> {
                                                   .all<Size>(
                                             // width : double.maxFinite
                                             // height: 56.0
-                                            const Size(double.maxFinite, 80.0),
+                                            const Size(double.maxFinite, 20.0),
                                           )),
                                           onPressed: () {
                                             open_loading();
                                           },
                                           child: Icon(Icons.check,
-                                              color: Colors.black.withBlue(60),
-                                              size: 60,
+                                              color: Colors.black.withBlue(20),
+                                              size: 30,
                                               semanticLabel: "Confirmar")),
                                     ),
                                   ],
