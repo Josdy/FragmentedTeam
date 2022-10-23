@@ -131,7 +131,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       child: Text(''),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor: Colors.red,
                                       ),
                                     ),
@@ -156,7 +156,7 @@ class _PasswordViewState extends State<PasswordView> {
                                               Text('Plomo', style: textStyle)),
                                     ),*/
                                     SizedBox(
-                                      width: 120, //<-- SEE HERE
+                                      width: 40, //<-- SEE HERE
                                     ),
                                     ElevatedButton(
                                       onPressed: () {
@@ -165,7 +165,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       child: Text(''),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor: Colors.grey,
                                       ),
                                     ),
@@ -190,7 +190,7 @@ class _PasswordViewState extends State<PasswordView> {
                                               Text('Lila', style: textStyle)),
                                     ),*/
                                     SizedBox(
-                                      width: 120, //<-- SEE HERE
+                                      width: 40, //<-- SEE HERE
                                     ),
                                     ElevatedButton(
                                       onPressed: () {
@@ -199,7 +199,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       child: Text(''),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor: Colors.purple,
                                       ),
                                     ),
@@ -239,7 +239,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       child: Text(''),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor: Colors.blue,
                                       ),
                                     ),
@@ -264,7 +264,7 @@ class _PasswordViewState extends State<PasswordView> {
                                               Text('Verde', style: textStyle)),
                                     ),*/
                                     SizedBox(
-                                      width: 120, //<-- SEE HERE
+                                      width: 40, //<-- SEE HERE
                                     ),
                                     ElevatedButton(
                                       onPressed: () {
@@ -273,7 +273,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       child: Text(''),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor: Colors.green,
                                       ),
                                     ),
@@ -298,7 +298,7 @@ class _PasswordViewState extends State<PasswordView> {
                                               Text('Marrón', style: textStyle)),
                                     ),*/
                                     SizedBox(
-                                      width: 120, //<-- SEE HERE
+                                      width: 40, //<-- SEE HERE
                                     ),
                                     ElevatedButton(
                                       onPressed: () {
@@ -307,7 +307,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       child: Text(''),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor: Colors.brown,
                                       ),
                                     ),
@@ -347,7 +347,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       child: Text(''),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor: Colors.yellow,
                                       ),
                                     ),
@@ -373,7 +373,7 @@ class _PasswordViewState extends State<PasswordView> {
                                               Text('Morado', style: textStyle)),
                                     ),*/
                                     SizedBox(
-                                      width: 120, //<-- SEE HERE
+                                      width: 40, //<-- SEE HERE
                                     ),
                                     ElevatedButton(
                                       onPressed: () {
@@ -382,7 +382,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       child: Text(''),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor: Colors.deepPurpleAccent,
                                       ),
                                     ),
@@ -407,7 +407,7 @@ class _PasswordViewState extends State<PasswordView> {
                                               style: textStyle)),
                                     ),*/
                                     SizedBox(
-                                      width: 120, //<-- SEE HERE
+                                      width: 40, //<-- SEE HERE
                                     ),
                                     ElevatedButton(
                                       onPressed: () {
@@ -416,7 +416,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       child: Text(''),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor: Colors.orange,
                                       ),
                                     ),
@@ -425,7 +425,7 @@ class _PasswordViewState extends State<PasswordView> {
                               )),
                               
                           Expanded(
-                              flex: 1,
+                              flex: 2,
                               child: Container(
                                 child: Row(
                                   //mainAxisSize: MainAxisSize.max,
@@ -457,7 +457,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       icon: Icon(Icons.backspace_outlined,color: Colors.black.withBlue(20)),                                       
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor:Colors.white,
                                       ),
                                       label: Text(""),
@@ -483,7 +483,7 @@ class _PasswordViewState extends State<PasswordView> {
                                               style: textStyle)),
                                     ),*/
                                     SizedBox(
-                                      width: 120, //<-- SEE HERE
+                                      width: 40, //<-- SEE HERE
                                     ),
                                     ElevatedButton(
                                       onPressed: () {
@@ -492,12 +492,12 @@ class _PasswordViewState extends State<PasswordView> {
                                       child: Text(''),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor: Colors.lightBlue,
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 120, //<-- SEE HERE
+                                      width: 40, //<-- SEE HERE
                                     ),
                                     ElevatedButton.icon(
                                       onPressed: () {
@@ -506,7 +506,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       icon: Icon(Icons.check,color: Colors.black.withBlue(40)),                                       
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
-                                        padding: EdgeInsets.all(60),
+                                        padding: EdgeInsets.all(20),
                                         backgroundColor:Colors.white,
                                       ),
                                       label: Text(""),
