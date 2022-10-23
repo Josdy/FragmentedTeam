@@ -7,7 +7,21 @@ void main() {
     title: 'Navigation Basics',
     home: FirstRoute(),
   ));
+
+  runApp(const MaterialApp(title: 'Validación', home: SecondRoute()));
 }
+
+/*class SecondRoute extends StatelessWidget{
+  Widget @override
+  Widget build(BuildContext context) {
+    final MediaQueryData = MediaQuery.of(context);
+    if(MediaQueryData.accessibleNavigation){
+      return Text('Lector de pantalla esta encendido');
+    }
+    return  Text('Lector de pantalla esta apagado');
+  }
+ 
+}*/
 
 class FirstRoute extends StatelessWidget {
   const FirstRoute({super.key});
@@ -102,12 +116,12 @@ Future<void> _showSimpleDialog(BuildContext context) async {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromRGBO(250, 250, 250, 1),
                   foregroundColor: const Color.fromRGBO(105, 165, 210, 1),
-                  minimumSize: const Size(100, 45), 
+                  minimumSize: const Size(100, 45),
                 ),
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) =>  MyHomePage()),
+                    MaterialPageRoute(builder: (context) => MyHomePage()),
                   );
                 },
                 child: const Text('Continuar'),
@@ -132,53 +146,54 @@ Future<void> _showSimpleDialog(BuildContext context) async {
 }
 
 class ThirdRoute extends StatelessWidget {
-  
   const ThirdRoute({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector( 
-       onTap: () {  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) =>  const LastRoute()),
-                  );},
-      child:Container(
-        constraints: const BoxConstraints.expand(),
-       
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/loading_view.png"),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: Scaffold(
-          backgroundColor: Colors.transparent,
-     ) ));
+    return GestureDetector(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const LastRoute()),
+          );
+        },
+        child: Container(
+            constraints: const BoxConstraints.expand(),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/loading_view.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Scaffold(
+              backgroundColor: Colors.transparent,
+            )));
   }
 }
+
 class LastRoute extends StatelessWidget {
-  
   const LastRoute({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector( 
-       onTap: () {  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) =>  const FirstRoute()),
-                  );},
-      child:Container(
-        constraints: const BoxConstraints.expand(),
-       
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/dashboard.png"),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: Scaffold(
-          backgroundColor: Colors.transparent,
-     ) ));
+    return GestureDetector(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const FirstRoute()),
+          );
+        },
+        child: Container(
+            constraints: const BoxConstraints.expand(),
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/dashboard.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Scaffold(
+              backgroundColor: Colors.transparent,
+            )));
   }
 }
 
@@ -289,20 +304,14 @@ class ButtonForHome extends StatelessWidget {
   }
 }
 
-
 class MyHomePage extends StatefulWidget {
-  
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
- 
-
   @override
   Widget build(BuildContext context) {
-
     return PasswordView();
   }
 }
