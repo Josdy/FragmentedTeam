@@ -148,7 +148,7 @@ class _PasswordViewState extends State<PasswordView> {
                                                 // width : double.maxFinite
                                                 // height: 56.0
                                                 const Size(
-                                                    double.maxFinite, 140.0),
+                                                    double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
                                             addDigit(1);
@@ -170,7 +170,7 @@ class _PasswordViewState extends State<PasswordView> {
                                                 // width : double.maxFinite
                                                 // height: 56.0
                                                 const Size(
-                                                    double.maxFinite, 140.0),
+                                                    double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
                                             addDigit(2);
@@ -190,7 +190,7 @@ class _PasswordViewState extends State<PasswordView> {
                                                 // width : double.maxFinite
                                                 // height: 56.0
                                                 const Size(
-                                                    double.maxFinite, 140.0),
+                                                    double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
                                             addDigit(3);
@@ -218,7 +218,7 @@ class _PasswordViewState extends State<PasswordView> {
                                                 // width : double.maxFinite
                                                 // height: 56.0
                                                 const Size(
-                                                    double.maxFinite, 140.0),
+                                                    double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
                                             addDigit(4);
@@ -238,7 +238,7 @@ class _PasswordViewState extends State<PasswordView> {
                                                 // width : double.maxFinite
                                                 // height: 56.0
                                                 const Size(
-                                                    double.maxFinite, 140.0),
+                                                    double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
                                             addDigit(5);
@@ -258,7 +258,7 @@ class _PasswordViewState extends State<PasswordView> {
                                                 // width : double.maxFinite
                                                 // height: 56.0
                                                 const Size(
-                                                    double.maxFinite, 140.0),
+                                                    double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
                                             addDigit(6);
@@ -286,7 +286,7 @@ class _PasswordViewState extends State<PasswordView> {
                                                 // width : double.maxFinite
                                                 // height: 56.0
                                                 const Size(
-                                                    double.maxFinite, 140.0),
+                                                    double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
                                             addDigit(7);
@@ -306,7 +306,7 @@ class _PasswordViewState extends State<PasswordView> {
                                                 // width : double.maxFinite
                                                 // height: 56.0
                                                 const Size(
-                                                    double.maxFinite, 140.0),
+                                                    double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
                                             addDigit(8);
@@ -326,7 +326,7 @@ class _PasswordViewState extends State<PasswordView> {
                                                 // width : double.maxFinite
                                                 // height: 56.0
                                                 const Size(
-                                                    double.maxFinite, 140.0),
+                                                    double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
                                             addDigit(9);
@@ -351,15 +351,15 @@ class _PasswordViewState extends State<PasswordView> {
                                                 MaterialStateProperty.all<Size>(
                                           // width : double.maxFinite
                                           // height: 56.0
-                                          const Size(double.maxFinite, 140.0),
+                                          const Size(double.maxFinite, 80.0),
                                         )),
                                         onPressed: () {
                                           backspace();
                                         },
                                         child: Icon(Icons.backspace_outlined,
-                                            color: Colors.black.withBlue(40),
+                                            color: Colors.black.withBlue(60),
                                             semanticLabel: "Borrar",
-                                            size: 120),
+                                            size: 60),
                                       ),
                                     ),
                                     Expanded(
@@ -374,7 +374,7 @@ class _PasswordViewState extends State<PasswordView> {
                                                 // width : double.maxFinite
                                                 // height: 56.0
                                                 const Size(
-                                                    double.maxFinite, 140.0),
+                                                    double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
                                             addDigit(0);
@@ -390,14 +390,14 @@ class _PasswordViewState extends State<PasswordView> {
                                                   .all<Size>(
                                             // width : double.maxFinite
                                             // height: 56.0
-                                            const Size(double.maxFinite, 140.0),
+                                            const Size(double.maxFinite, 80.0),
                                           )),
                                           onPressed: () {
                                             open_loading();
                                           },
                                           child: Icon(Icons.check,
-                                              color: Colors.black.withBlue(40),
-                                              size: 140,
+                                              color: Colors.black.withBlue(60),
+                                              size: 60,
                                               semanticLabel: "Confirmar")),
                                     ),
                                   ],
@@ -492,8 +492,8 @@ class DigitHolder extends StatelessWidget {
           ]),
       child: code.length > index
           ? Container(
-              width: 15,
-              height: 15,
+              width: 50,
+              height: 100,
               decoration: BoxDecoration(
                 color: color_componente,
                 shape: BoxShape.circle,
