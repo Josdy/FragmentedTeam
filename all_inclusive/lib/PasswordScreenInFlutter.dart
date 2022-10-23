@@ -128,7 +128,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       onPressed: () {
                                         addDigit(1);
                                         },
-                                      child: Text(''),
+                                      child: Text('Rojo'),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
                                         padding: EdgeInsets.all(20),
@@ -162,7 +162,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       onPressed: () {
                                         addDigit(2);
                                         },
-                                      child: Text(''),
+                                      child: Text('Plomo'),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
                                         padding: EdgeInsets.all(20),
@@ -196,7 +196,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       onPressed: () {
                                         addDigit(3);
                                         },
-                                      child: Text(''),
+                                      child: Text('Morado'),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
                                         padding: EdgeInsets.all(20),
@@ -236,7 +236,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       onPressed: () {
                                         addDigit(4);
                                         },
-                                      child: Text(''),
+                                      child: Text('Azul'),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
                                         padding: EdgeInsets.all(20),
@@ -270,7 +270,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       onPressed: () {
                                         addDigit(5);
                                         },
-                                      child: Text(''),
+                                      child: Text('Verde'),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
                                         padding: EdgeInsets.all(20),
@@ -304,7 +304,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       onPressed: () {
                                         addDigit(6);
                                         },
-                                      child: Text(''),
+                                      child: Text('Marron'),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
                                         padding: EdgeInsets.all(20),
@@ -344,7 +344,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       onPressed: () {
                                         addDigit(7);
                                         },
-                                      child: Text(''),
+                                      child: Text('Amarillo'),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
                                         padding: EdgeInsets.all(20),
@@ -379,7 +379,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       onPressed: () {
                                         addDigit(8);
                                         },
-                                      child: Text(''),
+                                      child: Text('lila'),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
                                         padding: EdgeInsets.all(20),
@@ -413,7 +413,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       onPressed: () {
                                         addDigit(9);
                                         },
-                                      child: Text(''),
+                                      child: Text('Naranja'),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
                                         padding: EdgeInsets.all(20),
@@ -460,7 +460,7 @@ class _PasswordViewState extends State<PasswordView> {
                                         padding: EdgeInsets.all(20),
                                         backgroundColor:Colors.white,
                                       ),
-                                      label: Text(""),
+                                      label: Text("borrar"),
                                     ),
                                     /**Expanded(
                                       flex: 1,
@@ -489,7 +489,7 @@ class _PasswordViewState extends State<PasswordView> {
                                       onPressed: () {
                                         addDigit(0);
                                         },
-                                      child: Text(''),
+                                      child: Text('Celeste'),
                                       style: ElevatedButton.styleFrom(
                                         shape: CircleBorder(),
                                         padding: EdgeInsets.all(20),
@@ -509,7 +509,7 @@ class _PasswordViewState extends State<PasswordView> {
                                         padding: EdgeInsets.all(20),
                                         backgroundColor:Colors.white,
                                       ),
-                                      label: Text(""),
+                                      label: Text("Confirmar"),
                                     ),
                                     /**Expanded(
                                       flex: 1,
