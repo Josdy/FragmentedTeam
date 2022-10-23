@@ -431,7 +431,7 @@ class _PasswordViewState extends State<PasswordView> {
                                   //mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Expanded(
+                                    /*Expanded(
                                       flex: 1,
                                       child: TextButton(
                                         style: ButtonStyle(
@@ -449,6 +449,18 @@ class _PasswordViewState extends State<PasswordView> {
                                             semanticLabel: "Borrar",
                                             size: 30),
                                       ),
+                                    ),*/
+                                    ElevatedButton.icon(
+                                      onPressed: () {
+                                        backspace();
+                                        },
+                                      icon: Icon(Icons.backspace_outlined,color: Colors.black.withBlue(20)),                                       
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor:Colors.white,
+                                      ),
+                                      label: Text(""),
                                     ),
                                     /**Expanded(
                                       flex: 1,
@@ -470,6 +482,9 @@ class _PasswordViewState extends State<PasswordView> {
                                           child: Text('Celeste',
                                               style: textStyle)),
                                     ),*/
+                                    SizedBox(
+                                      width: 120, //<-- SEE HERE
+                                    ),
                                     ElevatedButton(
                                       onPressed: () {
                                         addDigit(0);
@@ -481,7 +496,22 @@ class _PasswordViewState extends State<PasswordView> {
                                         backgroundColor: Colors.lightBlue,
                                       ),
                                     ),
-                                    Expanded(
+                                    SizedBox(
+                                      width: 120, //<-- SEE HERE
+                                    ),
+                                    ElevatedButton.icon(
+                                      onPressed: () {
+                                        open_loading();
+                                        },
+                                      icon: Icon(Icons.check,color: Colors.black.withBlue(40)),                                       
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor:Colors.white,
+                                      ),
+                                      label: Text(""),
+                                    ),
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -498,7 +528,7 @@ class _PasswordViewState extends State<PasswordView> {
                                               color: Colors.black.withBlue(20),
                                               size: 30,
                                               semanticLabel: "Confirmar")),
-                                    ),
+                                    ),*/
                                   ],
                                 ),
                               )),
