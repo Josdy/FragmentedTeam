@@ -1,41 +1,6 @@
 import 'package:all_inclusive/main.dart';
 import 'package:flutter/material.dart'
-    show
-        Alignment,
-        BorderRadius,
-        BoxDecoration,
-        BoxShadow,
-        BoxShape,
-        BuildContext,
-        ButtonStyle,
-        Color,
-        Colors,
-        Column,
-        Container,
-        EdgeInsets,
-        Expanded,
-        FontWeight,
-        Icon,
-        Icons,
-        Key,
-        MainAxisAlignment,
-        MainAxisSize,
-        MaterialPageRoute,
-        MaterialStateProperty,
-        MediaQuery,
-        Navigator,
-        Offset,
-        Radius,
-        Row,
-        Scaffold,
-        Size,
-        State,
-        StatefulWidget,
-        StatelessWidget,
-        Text,
-        TextButton,
-        TextStyle,
-        Widget;
+    show Alignment, BorderRadius, BoxDecoration, BoxShadow, BoxShape, BuildContext, ButtonStyle, CircleBorder, Color, Colors, Column, Container, EdgeInsets, ElevatedButton, Expanded, FontWeight, Icon, Icons, Key, MainAxisAlignment, MainAxisSize, MaterialPageRoute, MaterialState, MaterialStateProperty, MediaQuery, Navigator, Offset, Radius, Row, Scaffold, Size, SizedBox, State, StatefulWidget, StatelessWidget, Text, TextButton, TextStyle, Widget;
 import 'package:flutter_svg/flutter_svg.dart';
 
 class PasswordView extends StatefulWidget {
@@ -135,8 +100,9 @@ class _PasswordViewState extends State<PasswordView> {
                               flex: 1,
                               child: Container(
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Expanded(
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -157,8 +123,19 @@ class _PasswordViewState extends State<PasswordView> {
                                             'Rojo',
                                             style: textStyle,
                                           )),
+                                    ),*/
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        addDigit(1);
+                                        },
+                                      child: Text(''),
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor: Colors.red,
+                                      ),
                                     ),
-                                    Expanded(
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -177,8 +154,22 @@ class _PasswordViewState extends State<PasswordView> {
                                           },
                                           child:
                                               Text('Plomo', style: textStyle)),
+                                    ),*/
+                                    SizedBox(
+                                      width: 120, //<-- SEE HERE
                                     ),
-                                    Expanded(
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        addDigit(2);
+                                        },
+                                      child: Text(''),
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor: Colors.grey,
+                                      ),
+                                    ),
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -197,6 +188,20 @@ class _PasswordViewState extends State<PasswordView> {
                                           },
                                           child:
                                               Text('Lila', style: textStyle)),
+                                    ),*/
+                                    SizedBox(
+                                      width: 120, //<-- SEE HERE
+                                    ),
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        addDigit(3);
+                                        },
+                                      child: Text(''),
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor: Colors.purple,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -205,8 +210,9 @@ class _PasswordViewState extends State<PasswordView> {
                               flex: 1,
                               child: Container(
                                 child: Row(
-                                  children: [
-                                    Expanded(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -225,8 +231,19 @@ class _PasswordViewState extends State<PasswordView> {
                                           },
                                           child:
                                               Text('Azul', style: textStyle)),
+                                    ),*/
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        addDigit(4);
+                                        },
+                                      child: Text(''),
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor: Colors.blue,
+                                      ),
                                     ),
-                                    Expanded(
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -245,8 +262,22 @@ class _PasswordViewState extends State<PasswordView> {
                                           },
                                           child:
                                               Text('Verde', style: textStyle)),
+                                    ),*/
+                                    SizedBox(
+                                      width: 120, //<-- SEE HERE
                                     ),
-                                    Expanded(
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        addDigit(5);
+                                        },
+                                      child: Text(''),
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor: Colors.green,
+                                      ),
+                                    ),
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -265,6 +296,20 @@ class _PasswordViewState extends State<PasswordView> {
                                           },
                                           child:
                                               Text('Marrón', style: textStyle)),
+                                    ),*/
+                                    SizedBox(
+                                      width: 120, //<-- SEE HERE
+                                    ),
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        addDigit(6);
+                                        },
+                                      child: Text(''),
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor: Colors.brown,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -273,8 +318,9 @@ class _PasswordViewState extends State<PasswordView> {
                               flex: 1,
                               child: Container(
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Expanded(
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -293,8 +339,20 @@ class _PasswordViewState extends State<PasswordView> {
                                           },
                                           child: Text('Amarillo',
                                               style: textStyle)),
+                                    ),*/
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        addDigit(7);
+                                        },
+                                      child: Text(''),
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor: Colors.yellow,
+                                      ),
                                     ),
-                                    Expanded(
+                                    
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -313,8 +371,22 @@ class _PasswordViewState extends State<PasswordView> {
                                           },
                                           child:
                                               Text('Morado', style: textStyle)),
+                                    ),*/
+                                    SizedBox(
+                                      width: 120, //<-- SEE HERE
                                     ),
-                                    Expanded(
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        addDigit(8);
+                                        },
+                                      child: Text(''),
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor: Colors.deepPurpleAccent,
+                                      ),
+                                    ),
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -329,19 +401,35 @@ class _PasswordViewState extends State<PasswordView> {
                                                     double.maxFinite, 80.0),
                                               )),
                                           onPressed: () {
-                                            addDigit(9);
+                                            //addDigit(9);
                                           },
                                           child: Text('Naranja',
                                               style: textStyle)),
+                                    ),*/
+                                    SizedBox(
+                                      width: 120, //<-- SEE HERE
+                                    ),
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        addDigit(9);
+                                        },
+                                      child: Text(''),
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor: Colors.orange,
+                                      ),
                                     ),
                                   ],
                                 ),
                               )),
+                              
                           Expanded(
                               flex: 1,
                               child: Container(
                                 child: Row(
-                                  mainAxisSize: MainAxisSize.max,
+                                  //mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Expanded(
                                       flex: 1,
@@ -362,7 +450,7 @@ class _PasswordViewState extends State<PasswordView> {
                                             size: 30),
                                       ),
                                     ),
-                                    Expanded(
+                                    /**Expanded(
                                       flex: 1,
                                       child: TextButton(
                                           style: ButtonStyle(
@@ -381,6 +469,17 @@ class _PasswordViewState extends State<PasswordView> {
                                           },
                                           child: Text('Celeste',
                                               style: textStyle)),
+                                    ),*/
+                                    ElevatedButton(
+                                      onPressed: () {
+                                        addDigit(0);
+                                        },
+                                      child: Text(''),
+                                      style: ElevatedButton.styleFrom(
+                                        shape: CircleBorder(),
+                                        padding: EdgeInsets.all(60),
+                                        backgroundColor: Colors.lightBlue,
+                                      ),
                                     ),
                                     Expanded(
                                       flex: 1,
