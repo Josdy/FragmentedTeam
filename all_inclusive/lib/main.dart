@@ -8,7 +8,7 @@ void main() {
     home: FirstRoute(),
   ));
 
-  runApp(const MaterialApp(title: 'Validación', home: SecondRoute()));
+ // runApp(const MaterialApp(title: 'Validación', home: SecondRoute()));
 }
 
 /*class SecondRoute extends StatelessWidget{
@@ -97,7 +97,11 @@ class FirstRoute extends StatelessWidget {
 }
 
 Future<void> _showSimpleDialog(BuildContext context) async {
-  await showDialog<void>(
+
+   // ignore: non_constant_identifier_names
+   final MediaQueryData = MediaQuery.of(context);
+    if(!MediaQueryData.accessibleNavigation){
+        await showDialog<void>(
       context: context,
       builder: (BuildContext context) {
         return SimpleDialog(
@@ -143,6 +147,14 @@ Future<void> _showSimpleDialog(BuildContext context) async {
           ],
         );
       });
+    }else{
+        Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyHomePage()),
+                  );
+    }
+
+
 }
 
 class ThirdRoute extends StatelessWidget {
